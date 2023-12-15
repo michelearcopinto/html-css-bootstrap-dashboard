@@ -23,13 +23,13 @@
         <img class="pe-3 d-lg-none" src="./assets/img/mobile-logo.png" alt="header-logo">
 
         <div class="container-fluid d-flex flex-row px-0">
-            <form class="col-11 col-lg-10 col-xl-11" role="search">
+            <form class="col-11 col-lg-10 col-xxl-11" role="search">
                 <input class="form-control bg-dark-subtle" type="text" placeholder="Prova a cercare: Lezioni di Laravel"
                     aria-label="Prova a cercare: Lezioni di Laravel">
             </form>
 
             <ul
-                class="nav justify-content-center justify-content-lg-between align-items-center col-1 col-lg-2 col-xl-1 ps-lg-2">
+                class="nav justify-content-center justify-content-lg-between align-items-center col-1 col-lg-2 col-xxl-1 ps-lg-4 ps-xl-3">
                 <li class="nav-item d-none d-lg-block">
                     <a class="nav-link link-dark active p-0" aria-current="page" href="#"><i
                             class="bi bi-list-ul"></i></a>
@@ -75,17 +75,163 @@
                     <a class="d-none d-lg-block link-light link-underline-opacity-0" href="">Signals</a>
                 </li>
             </ul>
-            <a class="text-center" href=""><i class="bi bi-gear-fill fs-4 text-white"></i></a>
+            <div class="mx-auto mx-lg-0 my-1 d-lg-flex flex-row ps-lg-2 align-items-center gap-3">
+                <a class="text-center" href=""><i class="bi bi-gear-fill fs-4 text-white"></i></a>
+                <a class="d-none d-lg-inline-block link-light link-underline-opacity-0" href="">Admin</a>
+            </div>
         </aside>
 
-        <main>
+        <main class="overflow-auto">
             <header>
                 <div class="container-fluid text-white">
                     <h2>Boolean</h2>
                 </div>
             </header>
 
+            <div class="container-fluid d-lg-flex flex-row">
+                <div class="col-lg-8">
+                    <section>
 
+                    </section>
+
+                    <section class="container-fluid py-3">
+                        <div class="accordion">
+                            <div class="accordion-item p-2 ps-3 pb-1" id="header-accordion">
+                                <h2>F.A.Q.</h2>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Come aggiungere un nuovo studente?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>
+                                            Per aggiungere un nuovostudente al sistema, segui semplicemente questi
+                                            passaggi
+                                            intuitivi sulla nostradashboard.
+                                        </strong>
+                                        Una volta effettuato l'accesso al tuo account, troverai un'apposito modulo di
+                                        registrazione per gli studenti. Compila accuratamente tutte le informazioni
+                                        richieste,
+                                        come nome, cognome, e dettagli di contatto. Dopo aver confermato i dati, il
+                                        nuovo
+                                        studente sarà aggiunto con successo al sistema, pronto per beneficiare di tutte
+                                        le
+                                        funzionalità disponibili.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Come posso accedere alle informazioni del mio account?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>
+                                            L'accesso alle informazioni del tuo account è un processo rapido e sicuro.
+                                        </strong>
+                                        Dopo esserti autenticato sulla dashboard, individua l'opzione "Il Mio Account"
+                                        nel
+                                        menu
+                                        principale. Qui troverai tutte le informazioni pertinenti, come dettagli
+                                        personali,
+                                        storico delle transazioni e impostazioni dell'account. Per garantire la massima
+                                        sicurezza, ricorda di effettuare il logout quando hai completato le tue attività
+                                        per
+                                        proteggere le tue informazioni.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Posso usare questa dashboard da mobile?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>
+                                            Sì, la nostra dashboard è progettata per offrirti un'esperienza fluida anche
+                                            quando
+                                            sei in movimento.
+                                        </strong>
+                                        Puoi accedere alla tua dashboard da qualsiasi dispositivo mobile, garantendo
+                                        così la
+                                        flessibilità e la convenienza che meriti. Abbiamo ottimizzato la visualizzazione
+                                        e
+                                        la
+                                        navigazione per adattarsi a schermi di diverse dimensioni, consentendoti di
+                                        gestire
+                                        il
+                                        tuo account e accedere alle informazioni ovunque tu sia. Basta accedere tramite
+                                        il
+                                        browser del tuo dispositivo mobile e goderti tutte le funzionalità senza
+                                        compromessi.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="col-lg-4">
+                    <section class="container-fluid py-3">
+                        <ul class="list-group">
+                            <li class="list-group-item" id="header-todo">
+                                <h2>Todo</h2>
+                            </li>
+                            <li class="list-group-item">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                        Kickoff nuove classi
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                        Lezione su Bootstrap 5 in classe #75
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                        Controllare username github studenti
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="container-fluid">
+                        <div class="card p-3">
+                            <div class="card">
+                                <img src="./assets/img/stats.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body px-0">
+                                    <h5 class="card-title px-3">Utenti attivi</h5>
+                                    <p class="card-text px-3 mb-0">Lista degli utenti attivi in piattaforma nell'ultimo
+                                        mese
+                                    </p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"></li>
+                                        <li class="list-group-item">Gennaio: 1200</li>
+                                        <li class="list-group-item">Febbraio: 800</li>
+                                        <li class="list-group-item">Marzo: 1500</li>
+                                        <li class="list-group-item"><a href="">Visualizza report approfondito</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
         </main>
     </div>
 

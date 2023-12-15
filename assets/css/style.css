@@ -6,6 +6,15 @@
     transition: all 0.25s;
 }
 
+nav img:nth-child(2) {
+    max-height: 59.08px;
+    min-height: 59.08px;
+}
+
+nav form input::before {
+    content: "\F52A";
+}
+
 aside {
     width: 70px;
     height: calc(100vh - 70px);
@@ -15,22 +24,18 @@ aside {
     background-color: #071F35;
 }
 
-nav img:first-child {
-    max-height: px;
-    min-height: px;
-}
-
-nav img:nth-child(2) {
-    max-height: 59.08px;
-    min-height: 59.08px;
-}
-
 main {
     width: calc(100vw - 70px);
+    height: calc(100vh - 70px);
 }
 
 header {
     background-color: #1B72E8;
+}
+
+#header-accordion,
+#header-todo {
+    background-color: #F7F7F7;
 }
 
 @media screen and (min-width: 991.98px) {
@@ -45,6 +50,10 @@ header {
 
 @media screen and (max-width: 991.98px) {
     aside {
+        height: calc(100vh - 91.08px);
+    }
+
+    main {
         height: calc(100vh - 91.08px);
     }
 }
