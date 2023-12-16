@@ -1,7 +1,3 @@
-.orange {
-    color: #FF8F00;
-}
-
 .switch {
     transition: all 0.25s;
 }
@@ -11,8 +7,13 @@ nav img:nth-child(2) {
     min-height: 59.08px;
 }
 
-nav form input::before {
-    content: "\F52A";
+table img {
+    width: 30px;
+}
+
+table .btn {
+    padding-block: 5px;
+    padding-inline: 8px;
 }
 
 aside {

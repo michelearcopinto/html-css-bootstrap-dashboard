@@ -22,38 +22,36 @@
         <img class="img-fluid pe-3 d-none d-lg-block" src="./assets/img/logo.svg" alt="header-logo">
         <img class="pe-3 d-lg-none" src="./assets/img/mobile-logo.png" alt="header-logo">
 
-        <div class="container-fluid d-flex flex-row px-0">
-            <form class="col-11 col-lg-10 col-xxl-11" role="search">
-                <input class="form-control bg-dark-subtle" type="text" placeholder="Prova a cercare: Lezioni di Laravel"
-                    aria-label="Prova a cercare: Lezioni di Laravel">
-            </form>
-
-            <ul
-                class="nav justify-content-center justify-content-lg-between align-items-center col-1 col-lg-2 col-xxl-1 ps-lg-4 ps-xl-3">
-                <li class="nav-item d-none d-lg-block">
-                    <a class="nav-link link-dark active p-0" aria-current="page" href="#"><i
-                            class="bi bi-list-ul"></i></a>
-                </li>
-                <li class="nav-item d-none d-lg-block">
-                    <a class="nav-link link-dark active p-0" aria-current="page" href="#"><i
-                            class="bi bi-question-circle-fill"></i></a>
-                </li>
-                <li class="nav-item d-none d-lg-block">
-                    <a class="nav-link link-dark active p-0" aria-current="page" href="#"><i
-                            class="bi bi-three-dots-vertical"></i></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi bi-bell-fill orange"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Profilo</a></li>
-                        <li><a class="dropdown-item" href="#">Fatturazione</a></li>
-                        <li><a class="dropdown-item" href="#">Logout</a></li>
-                    </ul>
-                </li>
-            </ul>
+        <div class="input-group">
+            <span class="input-group-text bg-secondary-subtle" id="basic-addon1"><i class="bi bi-search"></i></span>
+            <input type="text" class="form-control bg-secondary-subtle"
+                placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Prova a cercare: Lezioni di Laravel"
+                aria-describedby="basic-addon1">
         </div>
+
+        <ul class="nav align-items-center flex-nowrap gap-3 ps-3 pe-2 pe-lg-1">
+            <li class="nav-item d-none d-lg-block">
+                <a class="nav-link link-dark active p-0" aria-current="page" href="#"><i class="bi bi-list-ul"></i></a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+                <a class="nav-link link-dark active p-0" aria-current="page" href="#"><i
+                        class="bi bi-question-circle-fill"></i></a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+                <a class="nav-link link-dark active p-0" aria-current="page" href="#"><i
+                        class="bi bi-three-dots-vertical"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-bell-fill text-warning"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Profilo</a></li>
+                    <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
     </nav>
 
     <div class="d-flex flex-row">
@@ -90,8 +88,195 @@
 
             <div class="container-fluid d-lg-flex flex-row">
                 <div class="col-lg-8">
-                    <section>
+                    <section class="container-fluid">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="col-6 col-md-4 col-lg-3 col-xl-6 col-xxl-7">Nome</th>
+                                    <th scope="col" class="text-center d-none d-md-table-cell">Data inizio</th>
+                                    <th scope="col" class="text-center d-none d-md-table-cell">ROI</th>
+                                    <th scope="col" class="text-center">Stato</th>
+                                    <th scope="col" class="text-center">Azioni</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" class="align-middle">
+                                        <figure class="d-flex align-items-center gap-1 mb-0">
+                                            <img src="./assets/img/class-avatar.png" alt="">
+                                            <span>Classe 75</span>
+                                        </figure>
+                                    </td>
+                                    <td class="text-center d-none d-md-table-cell">15 Feb 2021</td>
+                                    <td class="text-center d-none d-md-table-cell">20%</td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-success px-2 py-1">Done</button>
+                                    </td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="bi bi-pen-fill"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="bi bi-trash3-fill"></i>
+                                        </button>
+                                    </td>
+                                </tr>
 
+                                <tr>
+                                    <td scope="row" class="align-middle">
+                                        <figure class="d-flex align-items-center gap-1 mb-0">
+                                            <img src="./assets/img/class-avatar.png" alt="">
+                                            <span>Classe 76</span>
+                                        </figure>
+                                    </td>
+                                    <td class="text-center d-none d-md-table-cell">16 Feb 2021</td>
+                                    <td class="text-center d-none d-md-table-cell">20%</td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-success px-2 py-1">Done</button>
+                                    </td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="bi bi-pen-fill"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="bi bi-trash3-fill"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td scope="row" class="align-middle">
+                                        <figure class="d-flex align-items-center gap-1 mb-0">
+                                            <img src="./assets/img/class-avatar.png" alt="">
+                                            <span>Classe 76</span>
+                                        </figure>
+                                    </td>
+                                    <td class="text-center d-none d-md-table-cell">17 Feb 2021</td>
+                                    <td class="text-center d-none d-md-table-cell">20%</td>
+                                    <td class="text-center">
+                                        <button type="button"
+                                            class="btn btn-warning px-2 py-1 text-white">Process</button>
+                                    </td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="bi bi-pen-fill"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="bi bi-trash3-fill"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td scope="row" class="align-middle">
+                                        <figure class="d-flex align-items-center gap-1 mb-0">
+                                            <img src="./assets/img/class-avatar.png" alt="">
+                                            <span>Classe 75</span>
+                                        </figure>
+                                    </td>
+                                    <td class="text-center d-none d-md-table-cell">18 Feb 2021</td>
+                                    <td class="text-center d-none d-md-table-cell">20%</td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-success px-2 py-1">Done</button>
+                                    </td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="bi bi-pen-fill"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="bi bi-trash3-fill"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td scope="row" class="align-middle">
+                                        <figure class="d-flex align-items-center gap-1 mb-0">
+                                            <img src="./assets/img/class-avatar.png" alt="">
+                                            <span>Classe 76</span>
+                                        </figure>
+                                    </td>
+                                    <td class="text-center d-none d-md-table-cell">19 Feb 2021</td>
+                                    <td class="text-center d-none d-md-table-cell">20%</td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-danger px-2 py-1">Failed</button>
+                                    </td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="bi bi-pen-fill"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="bi bi-trash3-fill"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="align-middle">
+                                        <figure class="d-flex align-items-center gap-1 mb-0">
+                                            <img src="./assets/img/class-avatar.png" alt="">
+                                            <span>Classe 76</span>
+                                        </figure>
+                                    </td>
+                                    <td class="text-center d-none d-md-table-cell">20 Feb 2021</td>
+                                    <td class="text-center d-none d-md-table-cell">20%</td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-success px-2 py-1">Done</button>
+                                    </td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="bi bi-pen-fill"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="bi bi-trash3-fill"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td scope="row" class="align-middle">
+                                        <figure class="d-flex align-items-center gap-1 mb-0">
+                                            <img src="./assets/img/class-avatar.png" alt="">
+                                            <span>Classe 75</span>
+                                        </figure>
+                                    </td>
+                                    <td class="text-center d-none d-md-table-cell">21 Feb 2021</td>
+                                    <td class="text-center d-none d-md-table-cell">20%</td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-danger px-2 py-1">Failed</button>
+                                    </td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="bi bi-pen-fill"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="bi bi-trash3-fill"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td scope="row" class="align-middle">
+                                        <figure class="d-flex align-items-center gap-1 mb-0">
+                                            <img src="./assets/img/class-avatar.png" alt="">
+                                            <span>Classe 76</span>
+                                        </figure>
+                                    </td>
+                                    <td class="text-center d-none d-md-table-cell">22 Feb 2021</td>
+                                    <td class="text-center d-none d-md-table-cell">20%</td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-success px-2 py-1">Done</button>
+                                    </td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="bi bi-pen-fill"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="bi bi-trash3-fill"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </section>
 
                     <section class="container-fluid py-3">
@@ -191,7 +376,7 @@
                             <li class="list-group-item" id="header-todo">
                                 <h2>Todo</h2>
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-group-item p-3">
                                 <ul class="list-group">
                                     <li class="list-group-item">
                                         <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
@@ -214,7 +399,7 @@
                         <div class="card p-3">
                             <div class="card">
                                 <img src="./assets/img/stats.jpeg" class="card-img-top" alt="...">
-                                <div class="card-body px-0">
+                                <div class="card-body px-0 pb-1">
                                     <h5 class="card-title px-3">Utenti attivi</h5>
                                     <p class="card-text px-3 mb-0">Lista degli utenti attivi in piattaforma nell'ultimo
                                         mese
