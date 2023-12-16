@@ -7,15 +7,6 @@ nav img:nth-child(2) {
     min-height: 59.08px;
 }
 
-table img {
-    width: 30px;
-}
-
-table .btn {
-    padding-block: 5px;
-    padding-inline: 8px;
-}
-
 aside {
     width: 70px;
     height: calc(100vh - 70px);
@@ -34,6 +25,16 @@ header {
     background-color: #1B72E8;
 }
 
+table img {
+    width: 30px;
+}
+
+table .btn {
+    padding-block: 5px;
+    padding-inline: 8px;
+}
+
+#header-table,
 #header-accordion,
 #header-todo {
     background-color: #F7F7F7;
