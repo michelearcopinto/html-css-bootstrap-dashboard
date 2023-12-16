@@ -2,6 +2,10 @@
     transition: all 0.25s;
 }
 
+.orange {
+    color: #FF8F00;
+}
+
 nav img:nth-child(2) {
     max-height: 59.08px;
     min-height: 59.08px;
@@ -23,6 +27,28 @@ main {
 
 header {
     background-color: #1B72E8;
+}
+
+header .breadcrumb-item:first-child,
+header .list-group-horizontal>.list-group-item,
+header div div div:first-child .btn {
+    background-color: #165BBA;
+}
+
+header .list-group-horizontal>.list-group-item:hover,
+header .breadcrumb-item:first-child:hover {
+    cursor: pointer;
+}
+
+header .breadcrumb-item+.breadcrumb-item {
+    padding-left: 0;
+}
+
+header .breadcrumb-item+.breadcrumb-item::before {
+    content: ">>";
+    color: white;
+    background-color: #1B72E8;
+    padding-inline: 2px
 }
 
 table img {
