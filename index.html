@@ -132,7 +132,7 @@
                     <div class="order-first order-md-0">
                         <div class="d-flex align-items-center gap-2">
                             <span>Nuovo Studente</span>
-                            <button class="btn btn-primary border bg-transparent" type="button"
+                            <button class="btn btn-primary border fw-bolder bg-transparent" type="button"
                                 data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
                                 aria-controls="offcanvasExample">
                                 +
@@ -147,22 +147,126 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="offcanvas-body">
-                                    <div>
-                                        Some text as placeholder. In real life you can have the elements you have
-                                        chosen.
-                                        Like, text, images, lists, etc.
-                                    </div>
-                                    <div class="dropdown mt-3">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button"
-                                            data-bs-toggle="dropdown">
-                                            Dropdown button
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </div>
+                                    <form action="./thank-you.html" method="get">
+                                        <div class="row">
+                                            <div class="col-lg-6 mb-3">
+                                                <label for="name" class="form-label">Nome</label>
+                                                <input required type="text" class="form-control" id="name"
+                                                    aria-describedby="name">
+                                            </div>
+                                            <div class="col-lg-6 mb-3">
+                                                <label for="surname" class="form-label">Cognome</label>
+                                                <input required type="text" class="form-control" id="surname"
+                                                    aria-describedby="surname">
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-6 mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text"
+                                                        id="exampleInputEmail1-label">@</span>
+                                                    <input required type="email" class="form-control"
+                                                        id="exampleInputEmail1" placeholder="YourEmail@gmail.com"
+                                                        aria-label="emaiAddress" aria-describedby="emailHelp">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 mb-3">
+                                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                                <input required type="password" class="form-control"
+                                                    id="exampleInputPassword1">
+                                                <div id="passHelp" class="form-text">Ricorda di salvare la tua password
+                                                    e
+                                                    di tenerla al sicuro. <i class="bi bi-lock-fill"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-6 mb-3">
+                                                <label for="exampleInputEmail2" class="form-label"> Conferma
+                                                    Email</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text"
+                                                        id="exampleInputEmail2-label">@</span>
+                                                    <input required type="email" class="form-control"
+                                                        id="exampleInputEmail2" placeholder="YourEmail@gmail.com"
+                                                        aria-label="emaiAddress" aria-describedby="emailHelp">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 mb-3">
+                                                <label for="exampleInputPassword1" class="form-label">Conferma
+                                                    Password</label>
+                                                <input required type="password" class="form-control"
+                                                    id="exampleInputPassword2">
+                                                <div id="passHelp" class="form-text">Digita la stessa password inserita
+                                                    precedentemente.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="address" class="form-label">Indirizzo</label>
+                                            <input required type="text" class="form-control" id="address"
+                                                aria-describedby="address">
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-6 mb-3">
+                                                <label for="city" class="form-label">Città</label>
+                                                <input required type="text" class="form-control" id="city"
+                                                    aria-describedby="city">
+                                            </div>
+                                            <div class="col-4 mb-3">
+                                                <label for="state" class="form-label">Stato</label>
+                                                <div class="input-group mb-3">
+                                                    <select class="form-select" id="inputGroupSelect01">
+                                                        <option selected>Scegli...</option>
+                                                        <option value="1">Abruzzo</option>
+                                                        <option value="2">Basilicata</option>
+                                                        <option value="3">Calabria</option>
+                                                        <option value="4">Campania</option>
+                                                        <option value="5">Emilia-Romagna</option>
+                                                        <option value="6">Friuli-Venezia Giulia</option>
+                                                        <option value="7">Lazio</option>
+                                                        <option value="8">Liguria</option>
+                                                        <option value="9">Lombardia</option>
+                                                        <option value="10">Marche</option>
+                                                        <option value="11">Molise</option>
+                                                        <option value="12">Piemonte</option>
+                                                        <option value="13">Puglia</option>
+                                                        <option value="14">Sardegna</option>
+                                                        <option value="15">Sicilia</option>
+                                                        <option value="16">Toscana</option>
+                                                        <option value="17">Trentino-Alto Adige</option>
+                                                        <option value="18">Umbria</option>
+                                                        <option value="19">Valle d'Aosta</option>
+                                                        <option value="20">Veneto</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-2 mb-3">
+                                                <label for="cap" class="form-label">CAP</label>
+                                                <input required type="number" class="form-control" id="cap"
+                                                    aria-describedby="cap">
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="insert-photo" class="form-label">Foto</label>
+                                            <input required type="file" class="form-control" id="insert-photo"
+                                                aria-label="insert-photo" aria-describedby="insert-photo">
+                                        </div>
+
+                                        <div class="mb-3 form-check">
+                                            <input required type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Seleziona per
+                                                proseguire</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Salva</button>
+                                        <button type="reset" class="btn btn-warning">Svuota</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>

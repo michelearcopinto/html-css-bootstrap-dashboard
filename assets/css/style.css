@@ -31,7 +31,7 @@ header {
 
 header .breadcrumb-item:first-child,
 header .list-group-horizontal>.list-group-item,
-header div div div:first-child .btn {
+header div:first-child div:first-child div:first-child .btn {
     background-color: #165BBA;
 }
 
@@ -74,6 +74,10 @@ table .btn {
     main {
         width: calc(100vw - 150px);
     }
+
+    .offcanvas.offcanvas-end {
+        width: 800px;
+    }
 }
 
 @media screen and (max-width: 991.98px) {
@@ -83,5 +87,9 @@ table .btn {
 
     main {
         height: calc(100vh - 91.08px);
+    }
+
+    .offcanvas.offcanvas-end {
+        width: 100vw;
     }
 }
